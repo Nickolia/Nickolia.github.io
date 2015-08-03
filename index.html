@@ -20,6 +20,11 @@
         <meta name="viewport" content="initial-scale=1" />
     </head>
     <body layout="column" ng-controller="AppCtrl">
+        <div class="preloader">
+            <div  class="preloader-wrapper">
+                <img src="source/image/preloader-zn.gif"/>
+            </div>
+        </div>
 
         <div layout="row" flex>
             <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')"  ng-show="!(!!$root.page.index) || (!!$root.page.index && !!show_left_nav)">

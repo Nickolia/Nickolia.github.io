@@ -16,5 +16,14 @@ app.controller('AppCtrl', ['$scope','$rootScope', '$mdSidenav','$location','json
     };
     $scope.goToPageSubPost = function(url,sub_url){
         $location.url('/post/'+url+'/'+sub_url)
-    }
+    };
+    $rootScope.$on('$routeChangeStart', function(event, toState, toParams, fromState, fromParams){
+        $scope.show_left_nav = false;
+    });
+    $rootScope.$on('$routeChangeSuccess', function(event, toState, toParams, fromState, fromParams){
+
+    });
+    $rootScope.$on('$routeChangeError', function(){
+
+    });
 }]);
