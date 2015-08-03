@@ -20,7 +20,7 @@
         <meta name="viewport" content="initial-scale=1" />
     </head>
     <body layout="column" ng-controller="AppCtrl">
-        <div class="preloader">
+        <div id="preloader" ng-show="!(!!preloader)">
             <div  class="preloader-wrapper">
                 <img src="source/image/preloader-zn.gif"/>
             </div>

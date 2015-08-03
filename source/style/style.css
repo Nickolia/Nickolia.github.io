@@ -79,9 +79,16 @@ header a {
 .gridList .pink {
     background: #ff80ab;
 }
-.preloader{
-
+#preloader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 99;
+    display: table;
+    text-align: center;
 }
-.preloader .preloader-wrapper{
-
+#preloader .preloader-wrapper{
+    display: table-cell;
+    vertical-align: middle;
 }
