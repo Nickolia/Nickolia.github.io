@@ -7,6 +7,6 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav','$location','jsonSvc', functio
         $scope.posts = data.post;
     },function(errors){})
     $scope.goToPagePost = function(url){
-        $location.url('/#!/post/'+url)
+        $location.url('/post/'+url)
     }
 }]);
