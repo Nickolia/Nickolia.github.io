@@ -7,7 +7,10 @@ md-toolbar {
     background-color: #00897B;
     color: #E0F2F1;
 }
-
+md-content.index{
+    overflow: visible;
+    padding: 0;
+}
 header img {
     border-radius: 50%;
     width: 160px;
@@ -31,6 +34,7 @@ header a {
 #content header{
     padding: 50px;
     font-size: 1.5em;
+    min-height: inherit;
 }
 #content header{
     padding: 50px;
