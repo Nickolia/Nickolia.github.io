@@ -1,6 +1,7 @@
 var app = angular.module('StarterApp', [
         'ngRoute',
         'ngResource',
+        'ngSanitize',
         'ngMaterial',
         'hljs'
     ])
@@ -11,9 +12,13 @@ var app = angular.module('StarterApp', [
                 templateUrl: 'source/template/index.html',
                 controller: "Index"
             })
-            .when('/post/:post_id', {
+            .when('/post/:post_url', {
                 templateUrl: 'source/template/post.html',
                 controller: "Post"
+            })
+            .when('/post/:post_url/:sub_post_url', {
+                templateUrl: 'source/template/sub_post.html',
+                controller: "SubPost"
             });
     })
     .config(function (hljsServiceProvider) {
