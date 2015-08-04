@@ -22,8 +22,10 @@ app.controller('AppCtrl', ['$scope','$rootScope', '$mdSidenav','$location','json
     });
     $rootScope.$on('$routeChangeSuccess', function(event, toState, toParams, fromState, fromParams){
         $scope.preloader = true;
+        $mdSidenav('left').close();
     });
     $rootScope.$on('$routeChangeError', function(){
         $scope.preloader = true;
+        $mdSidenav('left').close();
     });
 }]);
