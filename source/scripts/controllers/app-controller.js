@@ -8,9 +8,6 @@ app.controller('AppCtrl', ['$scope','$rootScope', '$mdSidenav','$location','json
     };
     $rootScope.page = {};
     $rootScope.page.index = $location.$$url == "/";
-    if($rootScope.page.index == true){
-        $mdSidenav('left').close();
-    }
     $scope.posts = [];
     jsonSvc.getJsonData('source/json/post.json').then(function(data){
         $scope.posts = data.post;
