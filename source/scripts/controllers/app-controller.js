@@ -19,7 +19,6 @@ app.controller('AppCtrl', ['$scope','$rootScope', '$mdSidenav','$location','json
     };
     $rootScope.$on('$routeChangeStart', function(event, toState, toParams, fromState, fromParams){
         $scope.show_left_nav = false;
-        $scope.preloader = false;
     });
     $rootScope.$on('$routeChangeSuccess', function(event, toState, toParams, fromState, fromParams){
         $scope.preloader = true;
