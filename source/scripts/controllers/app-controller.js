@@ -2,11 +2,15 @@ app.controller('AppCtrl', ['$scope','$rootScope', '$mdSidenav','$location','json
     $scope.toggleSidenav = function(menuId) {
         $mdSidenav(menuId).toggle();
     };
-    $scope.toggleSidenavInIndex = function() {
-        $scope.show_left_nav = !$scope.show_left_nav
+    $scope.toggleSidenavInIndex = function(menuId) {
+        $scope.show_left_nav = !$scope.show_left_nav;
+        !!$scope.show_left_nav?$mdSidenav(menuId).open():$mdSidenav(menuId).close();
     };
     $rootScope.page = {};
     $rootScope.page.index = $location.$$url == "/";
+    if($rootScope.page.index == true){
+        $mdSidenav('left').close();
+    }
     $scope.posts = [];
     jsonSvc.getJsonData('source/json/post.json').then(function(data){
         $scope.posts = data.post;
