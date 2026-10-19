@@ -1,0 +1,12 @@
+# ads.txt with problems: malformed lines, duplicates, no records for most ad systems seen on the page
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+this line is not a record
+pubmatic.com 1234 RESELLER
+contact=ads@lucky-spin.example
+OWNERDOMAIN=lucky-spin.example
